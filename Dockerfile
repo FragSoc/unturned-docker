@@ -15,7 +15,7 @@ RUN mkdir -p $INSTALL_LOC && \
 USER unturned
 
 # Install the unturned server
-RUN steamcmd \
+RUN HOME=/home/unturned steamcmd \
     +login anonymous \
     +force_install_dir $INSTALL_LOC \
     +app_update $APPID validate \
