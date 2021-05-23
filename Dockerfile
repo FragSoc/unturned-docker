@@ -7,6 +7,7 @@ ARG UID=999
 
 ENV CONFIG_LOC="/config"
 ENV INSTALL_LOC="/unturnedserver"
+ENV HOME=${INSTALL_LOC}
 
 # Setup directory perms
 RUN mkdir -p $INSTALL_LOC && \
@@ -15,7 +16,8 @@ RUN mkdir -p $INSTALL_LOC && \
 USER unturned
 
 # Install the unturned server
-RUN HOME=/home/unturned steamcmd \
+WORKDIR $INSTALL_LOC
+RUN steamcmd \
     +login anonymous \
     +force_install_dir $INSTALL_LOC \
     +app_update $APPID validate \
