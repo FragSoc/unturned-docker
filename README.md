@@ -16,7 +16,7 @@ A [Docker](https://www.docker.com/) image to run a dedicated server for [Unturne
 An example sequence could be:
 
 ```bash
-docker build -t unturned .
+docker build -t fragsoc/unturned https://github.com/FragSoc/unturned-docker.git
 docker run -d \
   -p 27015:27015 \
   -p 27016:27016 \
