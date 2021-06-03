@@ -1,11 +1,11 @@
-<center>
+<div align="center">
     <a href="https://store.steampowered.com/app/304930/Unturned/">
         <img width=100% src="https://cdn.cloudflare.steamstatic.com/steam/apps/304930/header.jpg?t=1590451726"/>
     </a>
     <br/>
     <img alt="Travis (.com)" src="https://img.shields.io/travis/com/FragSoc/unturned-docker?style=flat-square">
     <img alt="GitHub" src="https://img.shields.io/github/license/FragSoc/unturned-docker?style=flat-square">
-</center>
+</div>
 
 ---
 
